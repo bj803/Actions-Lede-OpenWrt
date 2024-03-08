@@ -84,11 +84,11 @@ sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$qTM.tEk
 
 
 # v2ray-plugin编译失败
-./scripts/feeds clean
-./scripts/feeds update -a
-rm -rf package/lean/luci-app-mosdns
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+# ./scripts/feeds clean
+# ./scripts/feeds update -a
+# rm -rf package/lean/luci-app-mosdns
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
