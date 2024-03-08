@@ -81,14 +81,11 @@ sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$qTM.tEk
 # rm -rf package/lean/luci-app-wol
 # rm -rf package/lean/luci-app-xlnetacc
 # rm -rf package/lean/luci-app-zerotier
+rm -rf package/lean/luci-app-mosdns
 
-
-# v2ray-plugin编译失败
-# ./scripts/feeds clean
-# ./scripts/feeds update -a
-# rm -rf package/lean/luci-app-mosdns
-# rm -rf feeds/packages/lang/golang
-# git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+# 编译新版Sing-box和hysteria，需golang版本1.20或者以上版本 ，可以用以下命令
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
