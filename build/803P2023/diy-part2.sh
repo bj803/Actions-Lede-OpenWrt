@@ -82,8 +82,3 @@ sed -i 's/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$qTM.tEk
 # rm -rf package/lean/luci-app-xlnetacc
 # rm -rf package/lean/luci-app-zerotier
 # rm -rf package/lean/luci-app-mosdns
-
-
-./scripts/feeds update -a
-./scripts/feeds install -a
-
