@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git
+# src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall.git
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 ./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
